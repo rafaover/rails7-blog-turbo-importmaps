@@ -1,24 +1,14 @@
-# README
+# Rails 7 basic setup for a blog.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+### Config
 
-Things you may want to cover:
+- Javascript ImportMaps (No node or webpack)
+- Javascript packages using Pins (CDN)
+- Email notifications using ActionMailer
+- SimpleCSS (CDN)
+- ActionText Rails' Rich Text Editor
+- PostgreSQL
+- Live updates using Websockets (Turbo + Redis)
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+When deploying, REDIS needs to be installed to use turbo and the live comment updates.
+Ex: heroku addons:create heroku-redis:mini -a your-app-name
